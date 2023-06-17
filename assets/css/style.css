@@ -1,0 +1,356 @@
+:root{
+    --color-pri: #006a4d;
+    --color-sec: #69be28;
+    --color-dark: #000000;
+    --color-white: #ffffff;
+    --color-grey: #3c3c3c;
+
+}
+
+a:link, a:visited{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+/* ---------------------------------header-section-css---------------------------------------- */
+
+.header{
+    background-color: var(--color-white);
+    margin-bottom: 0;
+}
+
+.header .main-navbar{
+    margin-bottom: 0;
+}
+
+.header .navbar-brand{
+    padding: 0 1.5rem;
+}
+
+.header .nav-list{
+    padding-left: 16rem;
+    
+}
+
+.header .nav-btn a, .header .nav-list a{
+    margin-top: 3rem;
+}
+
+.header .navbar-header {
+    height: 8rem;
+    padding: 1.5rem 0;
+}
+
+.header .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+/* .header .navbar-nav a{
+        
+} */
+
+.header .navbar-default .navbar-nav>li>a {
+    color: var(--color-pri);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header .nav-btn{
+    border: 2px solid var(--color-white);
+}
+
+.header .navbar-default .navbar-nav>li>a:hover {
+    color: var(--color-sec);
+}
+
+.header .navbar-default .navbar-nav>li>a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: var(--color-sec);
+    /* color: var(--color-white); */
+    transition: all .5s ease-in-out;
+}
+
+.header .navbar-default .navbar-nav>li>a:hover::before{
+    width: 100%;
+}
+
+.header .navbar-default .navbar-nav.nav-btn a{
+    background-color: var(--color-sec);
+    color: var(--color-white);
+}
+
+/* .header .navbar-default .navbar-nav.nav-btn a:hover,
+.header .navbar-default .navbar-nav.nav-btn a:focus,
+.header .navbar-default .navbar-nav.nav-btn a:active
+{
+   color: var(--color-sec);
+   background-color: var(--color-white);
+} */
+
+.header .navbar-default .navbar-nav.nav-btn a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 0;
+    transition: all .5s ease-in-out;
+    /* z-index: -1; */
+}
+
+.header .navbar-default .navbar-nav.nav-btn a:hover::before{
+    width: 100%;
+    background-color: var(--color-white);
+    color: var(--color-sec);
+    border: 2px solid var(--color-sec);
+}
+
+
+/* ##########################  heroImg-section-css  ######################## */
+
+
+.heroImg{
+    background-image: linear-gradient(rgb(127, 180, 166, 0.1), rgb(127, 180, 166, 0.1)), url("../images/header-Img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem 0;
+    margin-top: -0.2rem;
+}
+
+hr{
+    width:47rem;
+}
+
+.pri-heading{
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: var(--color-white);
+    /* margin-bottom: 2.5rem; */
+}
+
+.sec-heading{
+    font-size: 5.8rem;
+    font-weight: bold;
+    color: var(--color-white);
+    /* margin-bottom: 3rem; */
+
+}
+/* hr{
+    width: 47rem;
+} */
+
+.para{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+
+/* ################################   event-section-css    ######################## */
+
+
+.event-section{
+    padding: 12rem 0;
+}
+
+.event-section .pri-heading{
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: var(--color-pri);
+    text-transform: uppercase;
+}
+.event-section .para{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--color-dark);
+    /* margin-bottom: 2.5rem; */
+}
+
+.event-section .sec-heading{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-pri);
+}
+
+.event-section figure {
+    margin-top: 7.5rem;
+}
+
+.event-section img{
+    width: 100%;
+}
+
+
+/* ############################   thumbNail-section-css    ############################ */
+
+.thumbNail{
+    padding: 10rem 0;
+    background-color: var(--color-pri);
+    overflow: hidden;
+}
+.thumbNail .pri-heading{
+    font-size: 3.6rem;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+}
+
+.thumbNail .sec-heading{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+.thumbImg img{
+    height: 16.5rem;
+    width: 16.5rem;
+    border-radius: 50%;
+}
+
+/* .box img{
+    width: 100%;
+    height: 100%;
+} */
+
+.thumbImg h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.thumbImg h3{
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+ .thumbImg{
+    margin-bottom: 7.5rem;
+}   
+
+ .speakerBtn a{
+    padding: 1.5rem 2.5rem;
+    color: var(--color-white);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid var(--color-white);
+    transition: all .5s ease-in-out;
+    border-radius: 0;
+}
+
+.speakerBtn a:hover,
+.speakerBtn a:focus,
+.speakerBtn a:active
+{
+    color: var(--color-pri);
+    background-color: var(--color-white);
+}
+
+ /* .speakerBtn a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 0;
+    transition: all .5s ease-in-out;
+    z-index: -1;
+}
+
+.speakerBtn a:hover::before{
+    width: 100%;
+    color: var(--color-pri);
+    background-color: var(--color-white);
+} */
+
+/* #################################  footer-section-css  ########################### */
+
+
+.footer{
+    padding: 8rem 0;
+    background-color: var(--color-grey);
+}
+
+
+.copyRight{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--color-white);
+    margin-top: 4rem;
+}
+
+.footer .para{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--color-white);
+    margin-right: 3rem;
+}
+
+.footer i{
+    color: var(--color-white);
+}
+
+/* .footer .box{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border-color: 2px solid var(--color-white);
+} */
+
+
+
+/* #########################  media-query started  ############################## */
+@media all and (max-width: 992px){
+    .header .nav-list{
+        padding-left: 0;
+    }
+}
+@media all and (max-width: 768px){
+    .header .navbar-header {
+        padding: 1rem 0;
+    }
+    .header .navbar-toggle{
+        color: var(--color-pri);
+    }
+
+    .header .nav-btn a{
+        text-align: center;
+    }
+    .header .nav-btn a, .header .nav-list a{
+        margin-top: 0.5rem;
+    }
+    hr{
+        width: 30rem;
+    }
+    .sec-heading{
+        font-size: 3.8rem;
+    }
+    .event-section {
+        padding: 2rem 0;
+    }
+    .event-section .pri-heading{
+        font-size: 3.4rem;
+    }
+    .thumbNail{
+        padding: 2rem 0;
+    }
+    .thumbImg {
+        margin-bottom: 2.5rem;
+    }
+    .speakerBtn a {
+        width: 100%;
+    }
+    .footer{
+        padding: 2rem 0;
+    }
+}
